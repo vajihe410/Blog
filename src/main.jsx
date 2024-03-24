@@ -10,7 +10,7 @@ import './index.css'
 import '../src/styles/font.css'
 
 const client = new ApolloClient({
-  uri:process.env.REACT_APP_GRAPHCMS_URI,
+  uri:"https://api-us-west-2.hygraph.com/v2/cl5ex4xej1o9h01ug1jevguyc/master",
   cache:new InMemoryCache()
 })
 ReactDOM.createRoot(document.getElementById('root')).render(
