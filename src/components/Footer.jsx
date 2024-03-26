@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
         <Typography variant='p' component='p' bgcolor='#f7f7f7' color='primary' padding='10px' textAlign='center' mt={10}>
-        <FavoritrIcon textAlign='center'/> Made with 
+        <FavoritrIcon/> Made with 
         </Typography>
     </footer>
   )
