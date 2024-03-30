@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 //components
 import Layout from "./layout/Layout"
 //pages
@@ -15,7 +15,6 @@ function App() {
           <Route path="/blogs/:slug" element={<BlogPage/>}/>
           <Route path="/authors/:slug" element={<AuthorPage/>}/>
         </Routes>
-        <HomePage/>
       </Layout>
   )
 }
