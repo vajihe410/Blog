@@ -7,6 +7,7 @@ import { GET_AUTHOR_INFO } from '../graphQL/queries';
 import { Avatar, Container, Grid, Typography } from '@mui/material';
 //components
 import PostCard from '../components/PostCard';
+import Loader from '../components/Loader';
 
 function AuthorPage() {
     const {slug} = useParams();
@@ -14,7 +15,7 @@ function AuthorPage() {
         variables: { slug },
       });
 
-    if(loading) return <h1>Laoding</h1>
+    if(loading) return <Loader/>
     if(errors) return <h1>Erorrs</h1>
       
     console.log(data)

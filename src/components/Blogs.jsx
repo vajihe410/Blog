@@ -5,11 +5,12 @@ import { Grid } from '@mui/material'
 import { GET_BLOGES_INFO } from '../graphQL/queries'
 //components
 import PostCard from './PostCard'
+import Loader from './Loader'
 
 function Blogs() {
   const {loading, data, errors} = useQuery(GET_BLOGES_INFO)
   console.log(data)
-  if(loading) return <h1>Laoding</h1>
+  if(loading) return <Loader/>
   if(errors) return <h1>Erorrs</h1>
   return (
     <Grid container spacing={2}>
