@@ -16,7 +16,7 @@ function AuthorPage() {
       });
 
     if(loading) return <Loader/>
-    if(errors) return <h1>Erorrs</h1>
+    if(errors) return <h1>Erorrs...</h1>
       
     console.log(data)
   return (
