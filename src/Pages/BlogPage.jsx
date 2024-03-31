@@ -5,6 +5,7 @@ import {useNavigate, useParams } from 'react-router-dom'
 import { Container, Typography, Grid, Avatar, Box } from '@mui/material'
 //components
 import Loader from '../components/Loader'
+import CommentForm from '../components/CommentForm';
 //querise
 import { GET_POST_INFO } from '../graphQL/queries'
 //icons
@@ -39,6 +40,9 @@ function BlogPage() {
         </Grid>
         <Grid item xs={12} mt={5}>
           <div dangerouslySetInnerHTML={{__html:sanitizeHtml(data.post.content.html)}}></div>
+        </Grid>
+        <Grid item xs={12} mt={5}>
+          <CommentForm slug={slug}/>
         </Grid>
       </Grid>
     </Container>
