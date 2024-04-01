@@ -11,7 +11,7 @@ function Authors() {
   const {loading,data,errors} = useQuery(GET_AUTHORS_INFO)
   if(loading) return <Loader/>
   if(errors) return <h1>Errors</h1>
-  console.log(data)
+ 
   return (
     <div>
       <Grid

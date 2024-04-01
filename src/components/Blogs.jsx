@@ -9,7 +9,7 @@ import Loader from './Loader'
 
 function Blogs() {
   const {loading, data, errors} = useQuery(GET_BLOGES_INFO)
-  console.log(data)
+
   if(loading) return <Loader/>
   if(errors) return <h1>Erorrs</h1>
   return (

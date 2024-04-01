@@ -21,7 +21,7 @@ function BlogPage() {
 
   if(loading) return <Loader/>
   if(errors) return <h1>Errors</h1>
-  console.log(data)
+ 
   return (
     <Container maxWidth='lg'> 
       <Grid container >

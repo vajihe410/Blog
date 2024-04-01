@@ -18,7 +18,7 @@ function AuthorPage() {
     if(loading) return <Loader/>
     if(errors) return <h1>Erorrs...</h1>
       
-    console.log(data)
+   
   return (
     <Container maxWidth='lg'>
         <Grid container mt={10}>
