@@ -24,7 +24,7 @@ function CommentForm({slug}) {
       }
     }
     if(data){
-      toast.success(' کامنت شما با موفقیت ارسال شد', {
+      toast.success('نظر شما با موفقیت ارسال شد', {
         position: "top-center",
         });
     }
