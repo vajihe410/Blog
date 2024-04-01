@@ -6,6 +6,7 @@ import { Container, Typography, Grid, Avatar, Box } from '@mui/material'
 //components
 import Loader from '../components/Loader'
 import CommentForm from '../components/CommentForm';
+import Comments from '../components/Comments';
 //querise
 import { GET_POST_INFO } from '../graphQL/queries'
 //icons
@@ -43,6 +44,9 @@ function BlogPage() {
         </Grid>
         <Grid item xs={12} mt={5}>
           <CommentForm slug={slug}/>
+        </Grid>
+        <Grid item xs={12}>
+          <Comments slug={slug}/>
         </Grid>
       </Grid>
     </Container>
